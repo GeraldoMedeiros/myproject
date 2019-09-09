@@ -53,21 +53,12 @@ public class CalcServletGeraldo extends HttpServlet{
 
         String ePerfeito = numPerfeito==numero?"é perfeito " : "não é perfeito ";
 
-/*        response.getWriter().append("<!DOCTYPE html>"+
-            "<html dir=\"ltr\">"+
-            "<head>"+
-            "<title>Teste de calculador</title>"+
-            "<link rel=\"estilo.css\" type=\"text/css\">"+
-            "</head>"+
-            "<body>"+
-            "<section class=\"overlay\">");
-*/
         response.getWriter().append("Esse foi o número digitado: " + numero + ", ele " + ePar);
         response.getWriter().append("<br>Este número " + ePrimo);
         response.getWriter().append("<br>Estes são seus divisores " + divisores + ".");
         response.getWriter().append("<br>Este número " + ePerfeito + "pois a soma dos seus divisores é (excluindo ele mesmo) " + numPerfeito);
         response.getWriter().append("<br>Em Matemática, um <b>número perfeito</b> é um número inteiro para o qual a soma de todos os seus divisores positivos próprios (excluindo ele mesmo) é igual ao próprio número.");
-        response.getWriter().append("<br>"/*</section></body></html>"*/);
+        response.getWriter().append("<br>");
 
         doGet(request, response);
     }
