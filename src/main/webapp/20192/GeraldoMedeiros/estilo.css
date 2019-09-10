@@ -14,14 +14,29 @@ body {
     overflow: break;
   }
 
-  .overlay {
-    width: 65%;
+  header{
+    font-size: 12pt;
+    overflow: hidden;
+  }
+  .cabecalho {
+    width: 85%;
     min-width: 30%;
-    margin: 3% auto;
+    margin: 1% auto;
     display: block;
     padding: 2%;
-    height: 90vh;
+    height: 10%;
     background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 40px;
+    border-radius: 20px;
+    text-align: left;
+  }
+  .overlay {
+    width: 85%;
+    min-width: 30%;
+    margin: 0% auto;
+    display: block;
+    padding: 2%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
     text-align: center;
   }
