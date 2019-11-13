@@ -21,6 +21,7 @@ public class CalcServlet extends HttpServlet {
      */
     public CalcServlet() {
         super();
+        // TODO Auto-generated constructor stub
     }
 
     /**
@@ -29,6 +30,7 @@ public class CalcServlet extends HttpServlet {
      */
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        // TODO Auto-generated method stub
         PrintWriter saida = response.getWriter();
 
         saida.append("<br>Served at: ").append(request.getContextPath());
@@ -40,19 +42,27 @@ public class CalcServlet extends HttpServlet {
      */
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+<<<<<<< HEAD
 
         //Definir o Tipo do Conteúdo response para HTML
         response.setContentType("text/html");
         response.setCharacterEncoding("UTF-8");
+=======
+        // TODO Auto-generated method stub
+        System.out.println("Passei no método doPost");
+>>>>>>> Atualizando
 
         String number = request.getParameter("numero");
-        String nome = request.getParameter("txtnome");
-        
+
         response.getWriter().append("Esse foi o número digitado: " + number);
+<<<<<<< HEAD
         response.getWriter().append("<br>Esse foi o nome digitado: " + nome);
 
         response.getWriter().append("<br>");
+=======
+>>>>>>> Atualizando
 
         doGet(request, response);
     }
+
 }
